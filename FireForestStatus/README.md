@@ -12,6 +12,8 @@ Link to the [specification](https://smart-data-models.github.io/dataModel.Forest
 Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/doc/spec_ES.md)
 
 Link to the [specification in French](https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/doc/spec_FR.md)
+
+Link to the [specification in German](https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/doc/spec_DE.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/examples/example.json) (keyvalues) for NGSI v2
