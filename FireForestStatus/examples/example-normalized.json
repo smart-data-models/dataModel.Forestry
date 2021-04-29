@@ -1,5 +1,6 @@
 {
-  "id": "urn:ngsi-ld:FireForestStatus:id:JPEX:39548913",
+  "id": "FireForestStatus.id.JPEX.39548913",
+  "type": "FireForestStatus",
   "dateCreated": {
     "type": "DateTime",
     "value": "2011-04-09T04:07:43Z"
