@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0",
+    "$schemaVersion": "0.0.1",
     "$id": "https://smart-data-models.github.io/dataModel.Forestry/ForestStatus/schema.json",
     "title": "Fire Forest Status schema",
     "description": "This entity describes the possible presence of smoke and/or fire in a forest.",
@@ -21,7 +21,7 @@
                 "smokeDetectedConfidence": {
                     "type": "number",
                     "minimum": 0,
-                    "maximum":1,
+                    "maximum": 1,
                     "description": "Property. Model:'https://schema.org/Number'. Confidence in smoke detection by cameras."
                 },
                 "fireDetected": {
@@ -31,22 +31,22 @@
                 "fireDetectedConfidence": {
                     "type": "number",
                     "minimum": 0,
-                    "maximum":1,
+                    "maximum": 1,
                     "description": "Property. Model:'https://schema.org/Number'. Confidence in fire detection by cameras."
                 },
                 "fireRiskIndex": {
                     "type": "number",
-                    "minimum":0,
+                    "minimum": 0,
                     "description": "Property. Model:'https://schema.org/Number'. Risk of fire index."
                 },
                 "fireWeatherIndex ": {
                     "type": "number",
-                    "minimum":0,
+                    "minimum": 0,
                     "description": "Property. Model:'https://schema.org/Number'. Risk of fire based on weather conditions."
                 },
                 "fireForestDailyRiskIndex": {
                     "type": "number",
-                    "minimum":0,
+                    "minimum": 0,
                     "description": "Property. Model:'https://schema.org/Number'. Daily risk of fire. "
                 },
                 "litterCoverage": {
