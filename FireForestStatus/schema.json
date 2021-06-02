@@ -64,7 +64,19 @@
                 "soilTemperature": {
                     "type": "number",
                     "description": "Property. The observed soil temperature in Celsius degrees. Model:'https://schema.org/Number'"
-                }
+                },
+                "greenLeavesDetected": {
+                    "type": "number",
+                    "description": "Property. Percentage of green leaves detected. Model:'https://schema.org/Number'.",
+                    "minimum": 0,
+                    "maximum": 1
+                },
+                "dryLeavesDetected": {
+                    "type": "number",
+                    "description": "Property. Percentage of dry leaves detected. Model:'https://schema.org/Number'.",
+                    "minimum": 0,
+                    "maximum": 1
+                 }
             }
         }
     ]
