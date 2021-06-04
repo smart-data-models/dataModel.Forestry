@@ -1,11 +1,12 @@
 Entität: FireForestStatus  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Forestry/blob/master/FireForestStatus/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Diese Entität beschreibt das mögliche Vorhandensein von Rauch und/oder Feuer in einem Wald.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fireDetected`: Vorhandensein eines von Kameras erkannten Feuers.  - `fireDetectedConfidence`: Vertrauen in die Branderkennung durch Kameras.  - `fireForestDailyRiskIndex`: Tägliche Brandgefahr.  - `fireRiskIndex`: Index der Brandgefahr.  - `fireWeatherIndex `: Brandgefahr aufgrund der Wetterbedingungen.  - `id`: Eindeutiger Bezeichner der Entität  - `litterCoverage`: Prozentualer Anteil der Oberfläche mit Ablagerungen  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `relativeHumidity`: Relative Luftfeuchtigkeit eine Zahl zwischen 0 und 1, die den Bereich von 0 % bis 100 % darstellt  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `smokeDetected`: Vorhandensein von Rauch, der von Kameras erkannt wird.  - `smokeDetectedConfidence`: Vertrauen in die Raucherkennung durch Kameras.  - `soilTemperature`: Die beobachtete Bodentemperatur in Celsius-Graden  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fireDetected`: Vorhandensein eines von Kameras erkannten Feuers.  - `fireDetectedConfidence`: Vertrauen in die Branderkennung durch Kameras.  - `fireForestDailyRiskIndex`: Tägliche Brandgefahr.  - `fireRiskIndex`: Index der Brandgefahr.  - `fireWeatherIndex `: Brandgefahr aufgrund der Wetterbedingungen.  - `id`: Eindeutiger Bezeichner der Entität  - `litterCoverage`: Prozentualer Anteil der Oberfläche mit Ablagerungen  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `relativeHumidity`: Relative Luftfeuchtigkeit eine Zahl zwischen 0 und 1, die den Bereich von 0 % bis 100 % darstellt  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `smokeDetected`: Vorhandensein von Rauch, der von Kameras erkannt wird.  - `smokeDetectedConfidence`: Vertrauen in die Raucherkennung durch Kameras.  - `soilTemperature`: Die beobachtete Bodentemperatur in Celsius-Graden  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.    
 Erforderliche Eigenschaften  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -26,14 +27,11 @@ FireForestStatus:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -113,10 +111,10 @@ FireForestStatus:
       x-ngsi:    
         model: https://schema.org/Number.    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -136,7 +134,8 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -159,7 +158,8 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -184,7 +184,8 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -206,7 +207,8 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -231,7 +233,8 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -258,7 +261,7 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -279,8 +282,8 @@ FireForestStatus:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -341,7 +344,8 @@ FireForestStatus:
 Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:FireForestStatus:id:JPEX:39548913",  
+  "id": "FireForestStatus.id.JPEX.39548913",  
+  "type": "FireForestStatus",  
   "dateCreated": {  
     "type": "DateTime",  
     "value": "2011-04-09T04:07:43Z"  
@@ -490,6 +494,7 @@ FireForestStatus:
 ```json  
 {  
   "id": "urn:ngsi-ld:FireForestStatus:id:JPEX:39548913",  
+  "type": "FireForestStatus",  
   "dateCreated": {  
     "type": "Property",  
     "value": {  
