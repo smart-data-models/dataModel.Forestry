@@ -6,7 +6,7 @@ Entität: FireForestStatus
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fireDetected`: Vorhandensein eines von Kameras erkannten Feuers.  - `fireDetectedConfidence`: Vertrauen in die Branderkennung durch Kameras.  - `fireForestDailyRiskIndex`: Tägliche Brandgefahr.  - `fireRiskIndex`: Index der Brandgefahr.  - `fireWeatherIndex `: Brandgefahr aufgrund der Wetterbedingungen.  - `id`: Eindeutiger Bezeichner der Entität  - `litterCoverage`: Prozentualer Anteil der Oberfläche mit Ablagerungen  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `relativeHumidity`: Relative Luftfeuchtigkeit eine Zahl zwischen 0 und 1, die den Bereich von 0 % bis 100 % darstellt  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `smokeDetected`: Vorhandensein von Rauch, der von Kameras erkannt wird.  - `smokeDetectedConfidence`: Vertrauen in die Raucherkennung durch Kameras.  - `soilTemperature`: Die beobachtete Bodentemperatur in Celsius-Graden  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dryLeavesDetected`: Prozentualer Anteil an trockenen Blättern erkannt  - `fireDetected`: Vorhandensein eines von Kameras erkannten Feuers.  - `fireDetectedConfidence`: Vertrauen in die Branderkennung durch Kameras.  - `fireForestDailyRiskIndex`: Tägliche Brandgefahr.  - `fireRiskIndex`: Index der Brandgefahr.  - `fireWeatherIndex `: Brandgefahr aufgrund der Wetterbedingungen.  - `greenLeavesDetected`: Prozentsatz der erkannten grünen Blätter  - `id`: Eindeutiger Bezeichner der Entität  - `litterCoverage`: Prozentualer Anteil der Oberfläche mit Ablagerungen  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `relativeHumidity`: Relative Luftfeuchtigkeit eine Zahl zwischen 0 und 1, die den Bereich von 0 % bis 100 % darstellt  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `smokeDetected`: Vorhandensein von Rauch, der von Kameras erkannt wird.  - `smokeDetectedConfidence`: Vertrauen in die Raucherkennung durch Kameras.  - `soilTemperature`: Die beobachtete Bodentemperatur in Celsius-Graden  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.    
 Erforderliche Eigenschaften  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -36,61 +36,94 @@ FireForestStatus:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
+    dryLeavesDetected:    
+      description: 'Percentage of dry leaves detected'    
+      maximum: 1    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number.    
+        type: Property    
     fireDetected:    
       description: 'Presence of a fire detected by cameras.'    
-      type: Property    
+      type: boolean    
       x-ngsi:    
         model: https://schema.org/Boolean    
+        type: Property    
     fireDetectedConfidence:    
       description: 'Confidence in fire detection by cameras.'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     fireForestDailyRiskIndex:    
       description: 'Daily risk of fire. '    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     fireRiskIndex:    
       description: 'Risk of fire index.'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     'fireWeatherIndex ':    
       description: 'Risk of fire based on weather conditions.'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
+    greenLeavesDetected:    
+      description: 'Percentage of green leaves detected'    
+      maximum: 1    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number.    
+        type: Property    
     id:    
       anyOf: &fireforeststatus_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -102,14 +135,16 @@ FireForestStatus:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     litterCoverage:    
       description: 'Percentage of surface with debris'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -261,23 +296,29 @@ FireForestStatus:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *fireforeststatus_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     relativeHumidity:    
       description: 'Relative Humidity a number between 0 and 1 representing the range of 0% to 100%'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -288,27 +329,33 @@ FireForestStatus:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     smokeDetected:    
       description: 'Presence of smoke detected by cameras.'    
-      type: Property    
+      type: boolean    
       x-ngsi:    
         model: https://schema.org/Boolean    
+        type: Property    
     smokeDetectedConfidence:    
       description: 'Confidence in smoke detection by cameras.'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     soilTemperature:    
       description: 'The observed soil temperature in Celsius degrees'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required: []    
   type: object    
 ```  
@@ -318,27 +365,35 @@ FireForestStatus:
 Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-    "id": "FireForestStatus-South-1",  
-    "dateObserved": "2021-02-24T00:00:00Z",  
-    "location": {  
-      "type": "Point",  
-      "coordinates": [42.206302, -7.887465]  
-    },  
-    "name": "Ourense Forest - South",  
-    "description": "Status of the Ourense Forest (south)",  
-    "refDevice": {  
-        "type": "Relationship",  
-        "object": ["ground-humidity-sensor:1"]  
-    },  
-    "smokeDetected": false,  
-    "smokeDetectedConfidence": 0.9,  
-    "fireDetected": false,  
-    "fireDetectedConfidence": 0.8,  
-    "fireRiskIndex": 0.1,  
-    "litterCoverage": 0.6,  
-    "relativeHumidity": 0.70,  
-    "soilTemperature": 25  
-  }  
+  "id": "FireForestStatus-South-1",  
+  "type": "FireForestStatus",  
+  "dateObserved": "2021-02-24T00:00:00Z",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      42.206302,  
+      -7.887465  
+    ]  
+  },  
+  "name": "Ourense Forest - South",  
+  "description": "Status of the Ourense Forest (south)",  
+  "refDevice": {  
+    "type": "Relationship",  
+    "object": [  
+      "ground-humidity-sensor:1"  
+    ]  
+  },  
+  "smokeDetected": false,  
+  "smokeDetectedConfidence": 0.9,  
+  "fireDetected": false,  
+  "fireDetectedConfidence": 0.8,  
+  "fireRiskIndex": 0.1,  
+  "litterCoverage": 0.6,  
+  "relativeHumidity": 0.70,  
+  "soilTemperature": 25,  
+  "greenLeavesDetected": 0.50,  
+  "dryLeavesDetected": 0.20  
+}  
 ```  
 #### FireForestStatus NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
@@ -453,17 +508,21 @@ FireForestStatus:
   "soilTemperature": {  
     "type": "Number",  
     "value": 25  
+  },  
+  "greenLeavesDetected": {  
+    "type": "Number",  
+    "value": 0.5  
+  },  
+  "dryLeavesDetected": {  
+    "type": "Number",  
+    "value": 0.2  
   }  
 }  
 ```  
 #### FireForestStatus NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
   "id": "urn:ngsi-ld:FireForestStatus:FireForestStatus-South-1",  
   "type": "FireForestStatus",  
   "dateObserved": "2021-02-24T00:00:00Z",  
@@ -486,7 +545,13 @@ FireForestStatus:
   "fireRiskIndex": 0.1,  
   "litterCoverage": 0.6,  
   "relativeHumidity": 0.70,  
-  "soilTemperature": 25  
+  "soilTemperature": 25,  
+  "greenLeavesDetected": 0.50,  
+  "dryLeavesDetected": 0.20,  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
 #### FireForestStatus NGSI-LD normalisiert Beispiel  
@@ -549,7 +614,7 @@ FireForestStatus:
       "type": "Point",  
       "coordinates": [  
         42.206302,  
-      -7.887465  
+        -7.887465  
       ]  
     }  
   },  
@@ -608,6 +673,18 @@ FireForestStatus:
   "soilTemperature": {  
     "type": "Property",  
     "value": 25  
-  }  
+  },  
+  "greenLeavesDetected": {  
+    "type": "Property",  
+    "value": 0.5  
+  },  
+  "dryLeavesDetected": {  
+    "type": "Property",  
+    "value": 0.2  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
