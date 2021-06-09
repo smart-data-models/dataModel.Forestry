@@ -108,6 +108,14 @@
   "soilTemperature": {
     "type": "Number",
     "value": 25
+  },
+  "greenLeavesDetected":{
+    "type": "Number",
+    "value": 0.5
+  },
+  "dryLeavesDetected":{
+    "type": "Number",
+    "value": 0.2
   }
 }
 
