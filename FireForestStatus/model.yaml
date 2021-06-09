@@ -59,6 +59,14 @@ FireForestStatus:
       type: string
       x-ngsi:
         type: Property
+    dryLeavesDetected:
+      description: 'Percentage of dry leaves detected'
+      maximum: 1
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number.
+        type: Property
     fireDetected:
       description: 'Presence of a fire detected by cameras.'
       type: boolean
@@ -93,6 +101,14 @@ FireForestStatus:
       type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
+    greenLeavesDetected:
+      description: 'Percentage of green leaves detected'
+      maximum: 1
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number.
         type: Property
     id:
       anyOf: &fireforeststatus_-_properties_-_owner_-_items_-_anyof
