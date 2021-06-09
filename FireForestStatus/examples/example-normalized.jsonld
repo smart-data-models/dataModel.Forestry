@@ -55,7 +55,7 @@
       "type": "Point",
       "coordinates": [
         42.206302,
-      -7.887465
+        -7.887465
       ]
     }
   },
@@ -78,7 +78,6 @@
   "smokeDetected": {
     "type": "Property",
     "value": false
-
   },
   "smokeDetectedConfidence": {
     "type": "Property",
@@ -116,13 +115,16 @@
     "type": "Property",
     "value": 25
   },
-  "greenLeavesDetected":{
+  "greenLeavesDetected": {
     "type": "Property",
     "value": 0.5
   },
-  "dryLeavesDetected":{
+  "dryLeavesDetected": {
     "type": "Property",
     "value": 0.2
-  }
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ]
 }
-
