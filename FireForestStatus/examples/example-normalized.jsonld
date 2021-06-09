@@ -115,6 +115,14 @@
   "soilTemperature": {
     "type": "Property",
     "value": 25
+  },
+  "greenLeavesDetected":{
+    "type": "Property",
+    "value": 0.5
+  },
+  "dryLeavesDetected":{
+    "type": "Property",
+    "value": 0.2
   }
 }
 
