@@ -1,0 +1,30 @@
+{
+    "@context": {
+        "address": "https://smartdatamodels.org/dataModel.Forestry/address",
+        "alternateName": "https://smartdatamodels.org/dataModel.Forestry/alternateName",
+        "areaServed": "https://smartdatamodels.org/dataModel.Forestry/areaServed",
+        "dataProvider": "https://smartdatamodels.org/dataModel.Forestry/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dataModel.Forestry/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dataModel.Forestry/dateModified",
+        "description": "https://smartdatamodels.org/dataModel.Forestry/description",
+        "dryLeavesDetected": "https://smartdatamodels.org/dataModel.Forestry/dryLeavesDetected",
+        "fireDetected": "https://smartdatamodels.org/dataModel.Forestry/fireDetected",
+        "fireDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/fireDetectedConfidence",
+        "fireForestDailyRiskIndex": "https://smartdatamodels.org/dataModel.Forestry/fireForestDailyRiskIndex",
+        "fireRiskIndex": "https://smartdatamodels.org/dataModel.Forestry/fireRiskIndex",
+        "fireWeatherIndex ": "https://smartdatamodels.org/dataModel.Forestry/fireWeatherIndex ",
+        "greenLeavesDetected": "https://smartdatamodels.org/dataModel.Forestry/greenLeavesDetected",
+        "id": "@id",
+        "litterCoverage": "https://smartdatamodels.org/dataModel.Forestry/litterCoverage",
+        "location": "https://smartdatamodels.org/dataModel.Forestry/location",
+        "name": "https://smartdatamodels.org/dataModel.Forestry/name",
+        "owner": "https://smartdatamodels.org/dataModel.Forestry/owner",
+        "relativeHumidity": "https://smartdatamodels.org/dataModel.Forestry/relativeHumidity",
+        "seeAlso": "https://smartdatamodels.org/dataModel.Forestry/seeAlso",
+        "smokeDetected": "https://smartdatamodels.org/dataModel.Forestry/smokeDetected",
+        "smokeDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/smokeDetectedConfidence",
+        "soilTemperature": "https://smartdatamodels.org/dataModel.Forestry/soilTemperature",
+        "source": "https://smartdatamodels.org/dataModel.Forestry/source",
+        "type": "@type"
+    }
+}
