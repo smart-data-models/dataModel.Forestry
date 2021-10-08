@@ -6,7 +6,7 @@
         "dataProvider": "https://smartdatamodels.org/dataModel.Forestry/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dataModel.Forestry/dateCreated",
         "dateModified": "https://smartdatamodels.org/dataModel.Forestry/dateModified",
-        "description": "https://smartdatamodels.org/dataModel.Forestry/description",
+        "description": "http://purl.org/dc/terms/description",
         "dryLeavesDetected": "https://smartdatamodels.org/dataModel.Forestry/dryLeavesDetected",
         "fireDetected": "https://smartdatamodels.org/dataModel.Forestry/fireDetected",
         "fireDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/fireDetectedConfidence",
@@ -16,7 +16,7 @@
         "greenLeavesDetected": "https://smartdatamodels.org/dataModel.Forestry/greenLeavesDetected",
         "id": "@id",
         "litterCoverage": "https://smartdatamodels.org/dataModel.Forestry/litterCoverage",
-        "location": "https://smartdatamodels.org/dataModel.Forestry/location",
+        "location": "ngsi-ld:location",
         "name": "https://smartdatamodels.org/dataModel.Forestry/name",
         "owner": "https://smartdatamodels.org/dataModel.Forestry/owner",
         "relativeHumidity": "https://smartdatamodels.org/dataModel.Forestry/relativeHumidity",
@@ -24,7 +24,6 @@
         "smokeDetected": "https://smartdatamodels.org/dataModel.Forestry/smokeDetected",
         "smokeDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/smokeDetectedConfidence",
         "soilTemperature": "https://smartdatamodels.org/dataModel.Forestry/soilTemperature",
-        "source": "https://smartdatamodels.org/dataModel.Forestry/source",
-        "type": "@type"
+        "source": "https://smartdatamodels.org/dataModel.Forestry/source"
     }
 }
