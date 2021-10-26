@@ -6,7 +6,7 @@ Version: 0.0.2
 This entity describes the possible presence of smoke and/or fire in a forest.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Forestry/blob/master/FireForestStatus/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Forestry/master/FireForestStatus/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Forestry/blob/master/FireForestStatus/doc/spec.md)
 
