@@ -362,7 +362,7 @@ FireForestStatus:
 </details>    
 ## Beispiel-Nutzlasten  
 #### FireForestStatus NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "FireForestStatus-South-1",  
