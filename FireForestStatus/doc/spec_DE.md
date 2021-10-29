@@ -6,7 +6,7 @@ Entität: FireForestStatus
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dryLeavesDetected`: Prozentualer Anteil an trockenen Blättern erkannt  - `fireDetected`: Vorhandensein eines von Kameras erkannten Feuers.  - `fireDetectedConfidence`: Vertrauen in die Branderkennung durch Kameras.  - `fireForestDailyRiskIndex`: Tägliche Brandgefahr.  - `fireRiskIndex`: Index der Brandgefahr.  - `fireWeatherIndex `: Brandgefahr aufgrund der Wetterbedingungen.  - `greenLeavesDetected`: Prozentsatz der erkannten grünen Blätter  - `id`: Eindeutiger Bezeichner der Entität  - `litterCoverage`: Prozentualer Anteil der Oberfläche mit Ablagerungen  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `relativeHumidity`: Relative Luftfeuchtigkeit eine Zahl zwischen 0 und 1, die den Bereich von 0 % bis 100 % darstellt  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `smokeDetected`: Vorhandensein von Rauch, der von Kameras erkannt wird.  - `smokeDetectedConfidence`: Vertrauen in die Raucherkennung durch Kameras.  - `soilTemperature`: Die beobachtete Bodentemperatur in Celsius-Graden  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `dryLeavesDetected`: Prozentsatz der festgestellten trockenen Blätter  - `fireDetected`: Vorhandensein eines von den Kameras erkannten Feuers.  - `fireDetectedConfidence`: Vertrauen in die Branderkennung durch Kameras.  - `fireForestDailyRiskIndex`: Tägliche Brandgefahr.  - `fireRiskIndex`: Index des Brandrisikos.  - `fireWeatherIndex `: Brandgefahr aufgrund der Wetterbedingungen.  - `greenLeavesDetected`: Prozentsatz der festgestellten grünen Blätter  - `id`: Eindeutiger Bezeichner der Entität  - `litterCoverage`: Prozentualer Anteil der Oberfläche mit Trümmern  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `relativeHumidity`: Relative Luftfeuchtigkeit eine Zahl zwischen 0 und 1, die den Bereich von 0% bis 100% repräsentiert  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `smokeDetected`: Vorhandensein von Rauch, der von Kameras erkannt wird.  - `smokeDetectedConfidence`: Vertrauen in die Raucherkennung durch Kameras.  - `soilTemperature`: Die beobachtete Bodentemperatur in Celsiusgraden  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.    
 Erforderliche Eigenschaften  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -362,7 +362,7 @@ FireForestStatus:
 </details>    
 ## Beispiel-Nutzlasten  
 #### FireForestStatus NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
 ```json  
 {  
   "id": "FireForestStatus-South-1",  
@@ -396,7 +396,7 @@ FireForestStatus:
 }  
 ```  
 #### FireForestStatus NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "FireForestStatus.id.JPEX.39548913",  
@@ -519,8 +519,8 @@ FireForestStatus:
   }  
 }  
 ```  
-#### FireForestStatus NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+#### FireForestStatus NGSI-LD Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
 ```json  
 {  
   "id": "urn:ngsi-ld:FireForestStatus:FireForestStatus-South-1",  
@@ -555,7 +555,7 @@ FireForestStatus:
 }  
 ```  
 #### FireForestStatus NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen FireForestStatus im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:FireForestStatus:id:JPEX:39548913",  
