@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.0",
+  "$schemaVersion": "0.1.1",
   "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.Forestry/ForestStatus/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/schema.json",
   "title": "Fire Forest Status schema",
   "description": "This entity describes the possible presence of smoke and/or fire in a forest.",
   "type": "object",
