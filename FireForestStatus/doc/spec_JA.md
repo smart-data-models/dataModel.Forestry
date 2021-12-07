@@ -6,10 +6,10 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dryLeavesDetected`: 検出された乾燥葉の割合  - `fireDetected`: カメラで検知した火災の有無  - `fireDetectedConfidence`: カメラによる火災検知の信頼性  - `fireForestDailyRiskIndex`: 日常的な火災のリスク  - `fireRiskIndex`: 火災の危険性の指標。  - `fireWeatherIndex `: 気象条件による火災のリスク  - `greenLeavesDetected`: 緑の葉の検出率  - `id`: エンティティのユニークな識別子  - `litterCoverage`: 破片のある表面の割合  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `relativeHumidity`: 相対湿度 0～100％の範囲で0～1の数値を表示  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `smokeDetected`: カメラで検知した煙の有無  - `smokeDetectedConfidence`: カメラによる煙検知の信頼性  - `soilTemperature`: 観測された土壌の温度（摂氏  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `dryLeavesDetected`: 検出された乾燥葉の割合  - `fireDetected`: カメラで検知した火災の有無  - `fireDetectedConfidence`: カメラによる火災検知の信頼性  - `fireForestDailyRiskIndex`: 日常的な火災のリスク  - `fireRiskIndex`: 火災の危険性の指標。  - `fireWeatherIndex`: 気象条件による火災のリスク  - `greenLeavesDetected`: 緑の葉の検出率  - `id`: エンティティのユニークな識別子  - `litterCoverage`: 破片のある表面の割合  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `relativeHumidity`: 相対湿度 0～100％の範囲で0～1の数値を表示  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `smokeDetected`: カメラで検知した煙の有無  - `smokeDetectedConfidence`: カメラによる煙検知の信頼性  - `soilTemperature`: 観測された土壌の温度（摂氏  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSIエンティティ・タイプ。それはFireForestStatusでなければならない。    
 必須項目  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+- `id`  - `type`  ## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 FireForestStatus:    
@@ -109,7 +109,7 @@ FireForestStatus:
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-    'fireWeatherIndex ':    
+    fireWeatherIndex:    
       description: 'Risk of fire based on weather conditions.'    
       minimum: 0    
       type: number    
@@ -356,8 +356,23 @@ FireForestStatus:
       type: string    
       x-ngsi:    
         type: Property    
-  required: []    
+    type:    
+      description: 'NGSI entity type. it has to be FireForestStatus'    
+      enum:    
+        - FireForestStatus    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Forestry/blob/master/FireForestStatus/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.1    
 ```  
 </details>    
 ## ペイロードの例  
@@ -688,4 +703,4 @@ FireForestStatus:
   ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
