@@ -6,9 +6,9 @@ Entity: FireForestStatus
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dryLeavesDetected`: Percentage of dry leaves detected  - `fireDetected`: Presence of a fire detected by cameras.  - `fireDetectedConfidence`: Confidence in fire detection by cameras.  - `fireForestDailyRiskIndex`: Daily risk of fire.   - `fireRiskIndex`: Risk of fire index.  - `fireWeatherIndex `: Risk of fire based on weather conditions.  - `greenLeavesDetected`: Percentage of green leaves detected  - `id`: Unique identifier of the entity  - `litterCoverage`: Percentage of surface with debris  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `relativeHumidity`: Relative Humidity a number between 0 and 1 representing the range of 0% to 100%  - `seeAlso`: list of uri pointing to additional resources about the item  - `smokeDetected`: Presence of smoke detected by cameras.  - `smokeDetectedConfidence`: Confidence in smoke detection by cameras.  - `soilTemperature`: The observed soil temperature in Celsius degrees  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `dryLeavesDetected`: Percentage of dry leaves detected  - `fireDetected`: Presence of a fire detected by cameras.  - `fireDetectedConfidence`: Confidence in fire detection by cameras.  - `fireForestDailyRiskIndex`: Daily risk of fire.   - `fireRiskIndex`: Risk of fire index.  - `fireWeatherIndex`: Risk of fire based on weather conditions.  - `greenLeavesDetected`: Percentage of green leaves detected  - `id`: Unique identifier of the entity  - `litterCoverage`: Percentage of surface with debris  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `relativeHumidity`: Relative Humidity a number between 0 and 1 representing the range of 0% to 100%  - `seeAlso`: list of uri pointing to additional resources about the item  - `smokeDetected`: Presence of smoke detected by cameras.  - `smokeDetectedConfidence`: Confidence in smoke detection by cameras.  - `soilTemperature`: The observed soil temperature in Celsius degrees  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI entity type. it has to be FireForestStatus    
 Required properties  
-## Data Model description of properties  
+- `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -109,7 +109,7 @@ FireForestStatus:
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-    'fireWeatherIndex ':    
+    fireWeatherIndex:    
       description: 'Risk of fire based on weather conditions.'    
       minimum: 0    
       type: number    
@@ -356,8 +356,23 @@ FireForestStatus:
       type: string    
       x-ngsi:    
         type: Property    
-  required: []    
+    type:    
+      description: 'NGSI entity type. it has to be FireForestStatus'    
+      enum:    
+        - FireForestStatus    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Forestry/blob/master/FireForestStatus/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.1    
 ```  
 </details>    
 ## Example payloads    
@@ -688,4 +703,4 @@ FireForestStatus:
   ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
