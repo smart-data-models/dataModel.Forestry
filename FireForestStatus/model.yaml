@@ -95,7 +95,7 @@ FireForestStatus:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-    'fireWeatherIndex ':
+    fireWeatherIndex:
       description: 'Risk of fire based on weather conditions.'
       minimum: 0
       type: number
@@ -342,11 +342,20 @@ FireForestStatus:
       type: string
       x-ngsi:
         type: Property
-  required: []
+    type:
+      description: 'NGSI entity type. it has to be FireForestStatus'
+      enum:
+        - FireForestStatus
+      type: string
+      x-ngsi:
+        type: Property
+  required:
+    - id
+    - type
   type: object
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Forestry/blob/master/FireForestStatus/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.Forestry/ForestStatus/schema.json
+  x-model-schema: https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/schema.json
   x-model-tags: ""
-  x-version: 0.0.2
+  x-version: 0.1.1
