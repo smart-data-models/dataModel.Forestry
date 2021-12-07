@@ -12,7 +12,7 @@
         "fireDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/fireDetectedConfidence",
         "fireForestDailyRiskIndex": "https://smartdatamodels.org/dataModel.Forestry/fireForestDailyRiskIndex",
         "fireRiskIndex": "https://smartdatamodels.org/dataModel.Forestry/fireRiskIndex",
-        "fireWeatherIndex ": "https://smartdatamodels.org/dataModel.Forestry/fireWeatherIndex ",
+        "fireWeatherIndex": "https://smartdatamodels.org/dataModel.Forestry/fireWeatherIndex",
         "greenLeavesDetected": "https://smartdatamodels.org/dataModel.Forestry/greenLeavesDetected",
         "id": "@id",
         "litterCoverage": "https://smartdatamodels.org/dataModel.Forestry/litterCoverage",
@@ -25,6 +25,7 @@
         "smokeDetected": "https://smartdatamodels.org/dataModel.Forestry/smokeDetected",
         "smokeDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/smokeDetectedConfidence",
         "soilTemperature": "https://smartdatamodels.org/dataModel.Forestry/soilTemperature",
-        "source": "https://smartdatamodels.org/source"
+        "source": "https://smartdatamodels.org/source",
+        "type": "@type"
     }
 }
