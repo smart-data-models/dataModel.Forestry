@@ -6,9 +6,9 @@ Entidad: FireForestStatus
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dryLeavesDetected`: Porcentaje de hojas secas detectadas  - `fireDetected`: Presencia de un incendio detectado por las cámaras.  - `fireDetectedConfidence`: Confianza en la detección de incendios mediante cámaras.  - `fireForestDailyRiskIndex`: Riesgo diario de incendio.  - `fireRiskIndex`: Índice de riesgo de incendio.  - `fireWeatherIndex `: Riesgo de incendio en función de las condiciones meteorológicas.  - `greenLeavesDetected`: Porcentaje de hojas verdes detectadas  - `id`: Identificador único de la entidad  - `litterCoverage`: Porcentaje de superficie con restos  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `relativeHumidity`: Humedad relativa un número entre 0 y 1 que representa el rango de 0% a 100%  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `smokeDetected`: Presencia de humo detectada por las cámaras.  - `smokeDetectedConfidence`: Confianza en la detección de humo mediante cámaras.  - `soilTemperature`: La temperatura del suelo observada en grados Celsius  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `dryLeavesDetected`: Porcentaje de hojas secas detectadas  - `fireDetected`: Presencia de un incendio detectado por las cámaras.  - `fireDetectedConfidence`: Confianza en la detección de incendios mediante cámaras.  - `fireForestDailyRiskIndex`: Riesgo diario de incendio.  - `fireRiskIndex`: Índice de riesgo de incendio.  - `fireWeatherIndex`: Riesgo de incendio en función de las condiciones meteorológicas.  - `greenLeavesDetected`: Porcentaje de hojas verdes detectadas  - `id`: Identificador único de la entidad  - `litterCoverage`: Porcentaje de superficie con restos  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `relativeHumidity`: Humedad relativa un número entre 0 y 1 que representa el rango de 0% a 100%  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `smokeDetected`: Presencia de humo detectada por las cámaras.  - `smokeDetectedConfidence`: Confianza en la detección de humo mediante cámaras.  - `soilTemperature`: La temperatura del suelo observada en grados Celsius  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI. Tiene que ser FireForestStatus    
 Propiedades requeridas  
-## Descripción del modelo de datos de las propiedades  
+- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -109,7 +109,7 @@ FireForestStatus:
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-    'fireWeatherIndex ':    
+    fireWeatherIndex:    
       description: 'Risk of fire based on weather conditions.'    
       minimum: 0    
       type: number    
@@ -356,8 +356,23 @@ FireForestStatus:
       type: string    
       x-ngsi:    
         type: Property    
-  required: []    
+    type:    
+      description: 'NGSI entity type. it has to be FireForestStatus'    
+      enum:    
+        - FireForestStatus    
+      type: string    
+      x-ngsi:    
+        type: Property    
+  required:    
+    - id    
+    - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Forestry/blob/master/FireForestStatus/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Forestry/FireForestStatus/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.1    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -688,4 +703,4 @@ FireForestStatus:
   ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
