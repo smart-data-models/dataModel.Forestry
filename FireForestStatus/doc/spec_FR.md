@@ -1,15 +1,31 @@
-Entité : FireForestStatus  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : FireForestStatus  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Forestry/blob/master/FireForestStatus/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette entité décrit la présence possible de fumée et/ou de feu dans une forêt.**  
+version : 0.1.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `dryLeavesDetected`: Pourcentage de feuilles sèches détectées  - `fireDetected`: Présence d'un incendie détecté par les caméras.  - `fireDetectedConfidence`: Confiance dans la détection des incendies par les caméras.  - `fireForestDailyRiskIndex`: Risque quotidien d'incendie.  - `fireRiskIndex`: Indice de risque d'incendie.  - `fireWeatherIndex`: Risque d'incendie en fonction des conditions météorologiques.  - `greenLeavesDetected`: Pourcentage de feuilles vertes détectées  - `id`: Identifiant unique de l'entité  - `litterCoverage`: Pourcentage de la surface avec des débris  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relativeHumidity`: Humidité relative un nombre entre 0 et 1 représentant la gamme de 0% à 100%.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `smokeDetected`: Présence de fumée détectée par les caméras.  - `smokeDetectedConfidence`: Confiance dans la détection de la fumée par les caméras.  - `soilTemperature`: La température du sol observée en degrés Celsius  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit s'agir de FireForestStatus.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `dryLeavesDetected[number]`: Pourcentage de feuilles sèches détectées  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `fireDetected[boolean]`: Présence d'un incendie détecté par les caméras.  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `fireDetectedConfidence[number]`: Confiance dans la détection des incendies par les caméras.  . Model: [https://schema.org/Number](https://schema.org/Number)- `fireForestDailyRiskIndex[number]`: Risque quotidien d'incendie.  . Model: [https://schema.org/Number](https://schema.org/Number)- `fireRiskIndex[number]`: Indice de risque d'incendie.  . Model: [https://schema.org/Number](https://schema.org/Number)- `fireWeatherIndex[number]`: Risque d'incendie en fonction des conditions météorologiques.  . Model: [https://schema.org/Number](https://schema.org/Number)- `greenLeavesDetected[number]`: Pourcentage de feuilles vertes détectées  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `id[*]`: Identifiant unique de l'entité  - `litterCoverage[number]`: Pourcentage de la surface avec des débris  . Model: [https://schema.org/Number.](https://schema.org/Number.)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `relativeHumidity[number]`: Humidité relative un nombre entre 0 et 1 représentant la gamme de 0% à 100%.  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `smokeDetected[boolean]`: Présence de fumée détectée par les caméras.  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `smokeDetectedConfidence[number]`: Confiance dans la détection de la fumée par les caméras.  . Model: [https://schema.org/Number](https://schema.org/Number)- `soilTemperature[number]`: La température du sol observée en degrés Celsius  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de FireForestStatus.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 FireForestStatus:    
@@ -375,9 +391,14 @@ FireForestStatus:
   x-version: 0.1.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### FireForestStatus Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de FireForestStatus au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "FireForestStatus-South-1",  
@@ -410,8 +431,10 @@ FireForestStatus:
   "dryLeavesDetected": 0.20  
 }  
 ```  
+</details>  
 #### FireForestStatus NGSI-v2 normalisé Exemple  
 Voici un exemple d'un FireForestStatus au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "FireForestStatus.id.JPEX.39548913",  
@@ -534,173 +557,185 @@ FireForestStatus:
   }  
 }  
 ```  
+</details>  
 #### FireForestStatus Valeurs clés NGSI-LD Exemple  
 Voici un exemple de FireForestStatus au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:FireForestStatus:FireForestStatus-South-1",  
-  "type": "FireForestStatus",  
-  "dateObserved": "2021-02-24T00:00:00Z",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      42.206302,  
-      -7.887465  
+    "id": "urn:ngsi-ld:FireForestStatus:FireForestStatus-South-1",  
+    "type": "FireForestStatus",  
+    "dateObserved": "2021-02-24T00:00:00Z",  
+    "description": "Status of the Ourense Forest (south)",  
+    "dryLeavesDetected": 0.2,  
+    "fireDetected": false,  
+    "fireDetectedConfidence": 0.8,  
+    "fireRiskIndex": 0.1,  
+    "greenLeavesDetected": 0.5,  
+    "litterCoverage": 0.6,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            42.206302,  
+            -7.887465  
+        ]  
+    },  
+    "name": "Ourense Forest - South",  
+    "refDevice": [  
+        "urn:ngsi-ld:Device:ground-humidity-sensor-1"  
+    ],  
+    "relativeHumidity": 0.7,  
+    "smokeDetected": false,  
+    "smokeDetectedConfidence": 0.9,  
+    "soilTemperature": 25,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Forestry/master/context.jsonld"  
     ]  
-  },  
-  "name": "Ourense Forest - South",  
-  "description": "Status of the Ourense Forest (south)",  
-  "refDevice": [  
-    "urn:ngsi-ld:Device:ground-humidity-sensor-1"  
-  ],  
-  "smokeDetected": false,  
-  "smokeDetectedConfidence": 0.9,  
-  "fireDetected": false,  
-  "fireDetectedConfidence": 0.8,  
-  "fireRiskIndex": 0.1,  
-  "litterCoverage": 0.6,  
-  "relativeHumidity": 0.70,  
-  "soilTemperature": 25,  
-  "greenLeavesDetected": 0.50,  
-  "dryLeavesDetected": 0.20,  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### FireForestStatus NGSI-LD normalisé Exemple  
 Voici un exemple d'un FireForestStatus au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:FireForestStatus:id:JPEX:39548913",  
-  "type": "FireForestStatus",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-04-09T04:07:43Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2011-04-09T04:07:43Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Ourense Forest - South"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Ourense Forest - South"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Status of the Ourense Forest (south)"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:FireForestStatus:items:IPCZ:25073160",  
-      "urn:ngsi-ld:FireForestStatus:items:FPRB:78814414"  
+    "id": "urn:ngsi-ld:FireForestStatus:id:JPEX:39548913",  
+    "type": "FireForestStatus",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "",  
+            "addressLocality": "Ourense",  
+            "addressRegion": "Galicia",  
+            "addressCountry": "ES",  
+            "postalCode": "",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Ourense Forest - South"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-04-09T04:07:43Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2011-04-09T04:07:43Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Status of the Ourense Forest (south)"  
+    },  
+    "dryLeavesDetected": {  
+        "type": "Property",  
+        "value": 0.2  
+    },  
+    "fireDetected": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "fireDetectedConfidence": {  
+        "type": "Property",  
+        "value": 0.8  
+    },  
+    "fireForestDailyRiskIndex": {  
+        "type": "Property",  
+        "value": 864.6  
+    },  
+    "fireRiskIndex": {  
+        "type": "Property",  
+        "value": 0.1  
+    },  
+    "fireWeatherIndex ": {  
+        "type": "Property",  
+        "value": 864.6  
+    },  
+    "greenLeavesDetected": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "litterCoverage": {  
+        "type": "Property",  
+        "value": 0.6  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                42.206302,  
+                -7.887465  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Ourense Forest - South"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:FireForestStatus:items:IPCZ:25073160",  
+            "urn:ngsi-ld:FireForestStatus:items:FPRB:78814414"  
+        ]  
+    },  
+    "relativeHumidity": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:FireForestStatus:items:XZGT:71938385",  
+            "urn:ngsi-ld:FireForestStatus:items:GBWU:95431484"  
+        ]  
+    },  
+    "smokeDetected": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "smokeDetectedConfidence": {  
+        "type": "Property",  
+        "value": 0.9  
+    },  
+    "soilTemperature": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Forestry/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:FireForestStatus:items:XZGT:71938385",  
-      "urn:ngsi-ld:FireForestStatus:items:GBWU:95431484"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        42.206302,  
-        -7.887465  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "",  
-      "addressLocality": "Ourense",  
-      "addressRegion": "Galicia",  
-      "addressCountry": "ES",  
-      "postalCode": "",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "smokeDetected": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "smokeDetectedConfidence": {  
-    "type": "Property",  
-    "value": 0.9  
-  },  
-  "fireDetected": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "fireDetectedConfidence": {  
-    "type": "Property",  
-    "value": 0.8  
-  },  
-  "fireRiskIndex": {  
-    "type": "Property",  
-    "value": 0.1  
-  },  
-  "fireWeatherIndex ": {  
-    "type": "Property",  
-    "value": 864.6  
-  },  
-  "fireForestDailyRiskIndex": {  
-    "type": "Property",  
-    "value": 864.6  
-  },  
-  "litterCoverage": {  
-    "type": "Property",  
-    "value": 0.6  
-  },  
-  "relativeHumidity": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "soilTemperature": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "greenLeavesDetected": {  
-    "type": "Property",  
-    "value": 0.5  
-  },  
-  "dryLeavesDetected": {  
-    "type": "Property",  
-    "value": 0.2  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
