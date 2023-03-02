@@ -1,5 +1,6 @@
 {
     "@context": {
+        "FireForestStatus": "https://smartdatamodels.org/dataModel.Forestry/FireForestStatus",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
