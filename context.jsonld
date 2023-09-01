@@ -2,12 +2,16 @@
     "@context": {
         "FireForestStatus": "https://smartdatamodels.org/dataModel.Forestry/FireForestStatus",
         "address": "https://smartdatamodels.org/address",
+        "addressCountry": "https://smartdatamodels.org/addressCountry",
+        "addressLocality": "https://smartdatamodels.org/addressLocality",
+        "addressRegion": "https://smartdatamodels.org/addressRegion",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "description": "http://purl.org/dc/terms/description",
+        "district": "https://smartdatamodels.org/district",
         "dryLeavesDetected": "https://smartdatamodels.org/dataModel.Forestry/dryLeavesDetected",
         "fireDetected": "https://smartdatamodels.org/dataModel.Forestry/fireDetected",
         "fireDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/fireDetectedConfidence",
@@ -21,12 +25,16 @@
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "owner": "https://smartdatamodels.org/owner",
+        "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
+        "postalCode": "https://smartdatamodels.org/postalCode",
         "relativeHumidity": "https://smartdatamodels.org/dataModel.Forestry/relativeHumidity",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "smokeDetected": "https://smartdatamodels.org/dataModel.Forestry/smokeDetected",
         "smokeDetectedConfidence": "https://smartdatamodels.org/dataModel.Forestry/smokeDetectedConfidence",
         "soilTemperature": "https://smartdatamodels.org/dataModel.Forestry/soilTemperature",
         "source": "https://smartdatamodels.org/source",
+        "streetAddress": "https://smartdatamodels.org/streetAddress",
+        "streetNr": "https://smartdatamodels.org/streetNr",
         "type": "@type"
     }
 }
