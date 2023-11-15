@@ -30,14 +30,14 @@
     "value": ""
   },
   "owner": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "FireForestStatus.IPCZ.25073160",
       "FireForestStatus.FPRB.78814414"
     ]
   },
   "seeAlso": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "FireForestStatus.XZGT.71938385",
       "FireForestStatus.GBWU:95431484"
@@ -90,12 +90,12 @@
     "value": 0.1
   },
   "fireWeatherIndex ": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "fireForestDailyRiskIndex": {
-    "type": "Number",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "litterCoverage": {
     "type": "Number",
