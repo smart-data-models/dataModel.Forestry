@@ -23,8 +23,8 @@
   "fireDetectedConfidence": 0.8,
   "fireRiskIndex": 0.1,
   "litterCoverage": 0.6,
-  "relativeHumidity": 0.70,
+  "relativeHumidity": 0.7,
   "soilTemperature": 25,
-  "greenLeavesDetected": 0.50,
-  "dryLeavesDetected": 0.20
+  "greenLeavesDetected": 0.5,
+  "dryLeavesDetected": 0.2
 }
