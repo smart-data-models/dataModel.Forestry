@@ -1,7 +1,6 @@
 {
   "id": "FireForestStatus-South-1",
   "type": "FireForestStatus",
-  "dateObserved": "2021-02-24T00:00:00Z",
   "location": {
     "type": "Point",
     "coordinates": [
@@ -11,12 +10,6 @@
   },
   "name": "Ourense Forest - South",
   "description": "Status of the Ourense Forest (south)",
-  "refDevice": {
-    "type": "Relationship",
-    "object": [
-      "ground-humidity-sensor:1"
-    ]
-  },
   "smokeDetected": false,
   "smokeDetectedConfidence": 0.9,
   "fireDetected": false,
