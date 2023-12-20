@@ -1,7 +1,6 @@
 {
   "id": "urn:ngsi-ld:FireForestStatus:FireForestStatus-South-1",
   "type": "FireForestStatus",
-  "dateObserved": "2021-02-24T00:00:00Z",
   "description": "Status of the Ourense Forest (south)",
   "dryLeavesDetected": 0.2,
   "fireDetected": false,
@@ -17,9 +16,6 @@
     ]
   },
   "name": "Ourense Forest - South",
-  "refDevice": [
-    "urn:ngsi-ld:Device:ground-humidity-sensor-1"
-  ],
   "relativeHumidity": 0.7,
   "smokeDetected": false,
   "smokeDetectedConfidence": 0.9,
