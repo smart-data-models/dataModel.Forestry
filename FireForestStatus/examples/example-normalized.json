@@ -89,7 +89,7 @@
     "type": "Number",
     "value": 0.1
   },
-  "fireWeatherIndex ": {
+  "fireWeatherIndex": {
     "type": "Boolean",
     "value": false
   },
