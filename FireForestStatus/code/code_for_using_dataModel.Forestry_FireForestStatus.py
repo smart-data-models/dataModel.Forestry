@@ -24,33 +24,38 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "FireForestStatus"
 subject = "dataModel.Forestry"
-dryLeavesDetected = {'type': 'Property', 'value': 0.2}
+dryLeavesDetected = 0.2
 attribute = "dryLeavesDetected"
 value = dryLeavesDetected
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-fireDetected = {'type': 'Property', 'value': False}
+fireDetected = False
 attribute = "fireDetected"
 value = fireDetected
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-fireDetectedConfidence = {'type': 'Property', 'value': 0.8}
+fireDetectedConfidence = 0.8
 attribute = "fireDetectedConfidence"
 value = fireDetectedConfidence
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-fireForestDailyRiskIndex = {'type': 'Property', 'value': 864.6}
-attribute = "fireForestDailyRiskIndex"
-value = fireForestDailyRiskIndex
+fireRiskIndex = 0.1
+attribute = "fireRiskIndex"
+value = fireRiskIndex
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
